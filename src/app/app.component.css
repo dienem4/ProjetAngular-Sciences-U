@@ -1,0 +1,32 @@
+/* Style pour la barre de navigation */
+.navbar {
+    background-color: #333; /* Couleur de fond */
+    color: #fff; /* Couleur de texte */
+    padding: 10px; /* Espacement intérieur */
+  }
+  
+  /* Style pour le lien de la marque */
+  .navbar-brand {
+    color: #fff; /* Couleur de texte */
+    font-size: 2rem; /* Taille de police */
+    font-weight: bold; /* Graisse de police */
+  }
+  
+  /* Style pour les éléments de navigation */
+  .navbar-nav .nav-link {
+    color: #fff; /* Couleur de texte */
+    font-size: 1.2rem; /* Taille de police */
+    font-weight: bold; /* Graisse de police */
+    margin-right: 10px; /* Espacement à droite */
+  }
+  
+  /* Style pour l'élément de navigation actif */
+  .navbar-nav .nav-link.active {
+    color: #ffc107; /* Couleur de texte */
+  }
+  
+  /* Style pour le conteneur principal */
+  .container {
+    margin-top: 50px; /* Espacement au-dessus */
+  }
+  
