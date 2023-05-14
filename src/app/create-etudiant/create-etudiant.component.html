@@ -1,17 +1,16 @@
 <form [formGroup]="etudiantForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="mb-3">
+        <label for="">{{ 'create-student.FirstName' | translate }}</label>
+        <input type="text" formControlName="firstname" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="">{{ 'create-student.Email' | translate }}</label>
+        <input type="email" formControlName="email" class="form-control"  required>
+    </div>
 
     <div class="mb-3">
-        <label for="">Nom</label>
-        <input type="text" formControlName="firstname" class="form-control" placeholder="full Name" required>
-    </div>
-    <div class="mb-3">
-        <label for="">Email</label>
-        <input type="email" formControlName="email" class="form-control" placeholder="Email" required>
-    </div>
-    
-    <div class="mb-3">
-     <label for="name">Etudiant course</label>
-     <select class="form-control form-select form-select-lg mb-3"  formControlName="etudiant_course" placeholder="" required>
+     <label for="name">{{ 'create-student.StudentCourse' | translate }}</label>
+     <select class="form-control form-select form-select-lg mb-3"  formControlName="etudiant_course" required>
         <option value="B-Tech" selected> B-Tech </option>
         <option value="Angular">ANGULAR</option>
         <option value="Js">JS</option>
@@ -21,13 +20,13 @@
     </div>
       
     <div class="mb-3">
-        <label for="">Frais</label>
-        <input type="number" formControlName="fees" class="form-control" placeholder="fees" required>
+        <label for="">{{ 'create-student.Fees' | translate }}</label>
+        <input type="number" formControlName="fees" class="form-control" required>
     </div>
 
     <div class="mb-3">
-        <button type="submit" class="btn btn-primary" [disabled]="!etudiantForm.valid">Créer</button>
+        <button type="submit" class="btn btn-primary" [disabled]="!etudiantForm.valid">{{ 'create-student.create' | translate }}</button>
         &nbsp; &nbsp; &nbsp; &nbsp;
-        <button type="reset" class="btn btn-danger"> Réinitialiser </button>
+        <button type="reset" class="btn btn-danger"> {{ 'create-student.reset' | translate }} </button>
     </div>
 </form>

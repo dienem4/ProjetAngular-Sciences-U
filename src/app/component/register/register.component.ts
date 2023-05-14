@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { AuthService } from 'src/app/shared/auth.service';
 
 @Component({
@@ -10,8 +11,14 @@ export class RegisterComponent implements  OnInit {
 
   email : string = '';
   password : string = '';
+  language = 'fr';
 
-  constructor(private auth : AuthService) { }
+
+  constructor(private auth : AuthService, private translate: TranslateService) {
+    translate.setDefaultLang('fr');
+  }
+
+
 
   ngOnInit(): void {
   }
@@ -34,5 +41,14 @@ export class RegisterComponent implements  OnInit {
     this.password = '';
 
   }
+  
+  changeLanguage(): void{
+    if(this.language === 'fr'){
+      this.language = 'en';
 
+    }else{
+      this.language = 'fr';
+    }
+    this.translate.use(this.language);
+  }
 }

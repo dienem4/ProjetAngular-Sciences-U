@@ -6,23 +6,23 @@
                 <div class="card-body">
                     <form>
                         <div class="mb-3">
-                            <h4 class="text-dark text-muted">Login</h4>
+                            <h4 class="text-dark text-muted">{{ 'login.title' | translate }}</h4>
                         </div>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email</label>
+                          <label for="exampleInputEmail1" class="form-label">{{ 'login.email' | translate }}</label>
                           <input type="email" class="form-control" name="email" [(ngModel)]="email">
                         </div>
                         <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <label for="exampleInputPassword1" class="form-label">{{ 'login.password' | translate }}</label>
                           <input type="password" class="form-control" name="password" [(ngModel)]="password">
                         </div>
-                        <button type="button" class="btn btn-info" (click)="login()">Login</button>
+                        <button type="button" class="btn btn-info" (click)="login()">{{ 'login.loginButton' | translate }}</button>
                         <div class="row">
                             <div class="col-md-6">
-                                <a href="/register" style="text-decoration: none;">Need Account ? <span class="text-danger">Register</span></a>
+                                <a href="/register" style="text-decoration: none;">{{ 'login.noAccount' | translate }} <span class="text-danger">{{ 'login.registerLink' | translate }}</span></a>
                             </div>
                             <div class="col-md-6">
-                                <a href="/forgot-password" class="text-dark" style="text-decoration: none;"> Forgot Password ? </a>
+                                <a href="/forgot-password" class="text-dark" style="text-decoration: none;">{{ 'login.forgotPasswordLink' | translate }}</a>
                             </div>
                         </div>
                     </form>

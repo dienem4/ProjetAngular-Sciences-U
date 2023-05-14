@@ -1,0 +1,62 @@
+{
+    "app": {
+    "register": "Register",
+    "login": "Log in",
+    "admin": "Admin",
+    "student": "Student",
+    "home": "Home",
+    "logout": "Logout",
+    "button": "French"
+    },
+    "register": {
+    "title": "Registration",
+    "email": "Email",
+    "password": "Password",
+    "registerButton": "Register",
+    "haveAccount": "Already have an account?",
+    "loginLink": "Login"
+    },
+    "login": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "loginButton": "Log in",
+    "noAccount": "Don't have an account?",
+    "registerLink": "Register",
+    "forgotPasswordLink": "Have you forgotten your password?"
+    },
+    "home": {
+        "title": "List of students",
+        "FirstName": "First Name",
+        "Email": "Email",
+        "StudentCourse": "Student Course",
+        "Fees": "Fees"
+    },
+    "list-student": {
+        "title": "List of students",
+        "FirstName": "First Name",
+        "Email": "Email",
+        "StudentCourse": "Student Course",
+        "Fees": "Fees",
+        "Actions": "Actions",
+        "Edit": "Edit",
+        "Delete": "Delete",
+        "Create": "Add a student"
+    },
+    "create-student":{
+        "FirstName": "First Name",
+        "Email": "Email",
+        "StudentCourse": "Student Course",
+        "Fees": "Fees",
+        "create": "Create",
+        "reset":"Reset"
+    },
+    "edit-student":{
+        "FirstName": "First Name",
+        "Email": "Email",
+        "StudentCourse": "Student Course",
+        "Fees": "Fees",
+        "create": "Create",
+        "reset":"Reset"
+    }
+    }

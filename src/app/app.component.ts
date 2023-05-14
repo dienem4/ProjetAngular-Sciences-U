@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { AuthService } from './shared/auth.service';
 
 
@@ -9,12 +10,14 @@ import { AuthService } from './shared/auth.service';
 })
 export class AppComponent {
   title = 'etudiant-angular-science';
-  isLoggedIn = false; // par défaut, l'utilisateur n'est pas connecté
+  language = 'fr';
+  isLoggedIn = false; 
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, private translate: TranslateService) {
+    translate.setDefaultLang('fr');
+  }
 
   ngOnInit() {
-    //vérifier l'état de l'authentification à chaque chargement de page
     this.authService.authState$.subscribe(user => {
       if (user) {
         this.isLoggedIn = true;
@@ -27,5 +30,15 @@ export class AppComponent {
   onLogout() {
     this.authService.logout();
   }
-  
+
+  changeLanguage(): void{
+    if(this.language === 'fr'){
+      this.language = 'en';
+
+    }else{
+      this.language = 'fr';
+    }
+    this.translate.use(this.language);
+  }
+
 }

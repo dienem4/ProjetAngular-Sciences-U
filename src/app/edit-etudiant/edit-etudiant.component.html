@@ -1,16 +1,16 @@
 <form [formGroup]="editForm" (ngSubmit)="onSubmit()" novalidate>
 
     <div class="mb-3">
-        <label for="">Nom</label>
+        <label for="">{{ 'edit-student.FirstName' | translate }}</label>
         <input type="text" formControlName="firstname" class="form-control" required>
     </div>
     <div class="mb-3">
-        <label for="">Email</label>
+        <label for="">{{ 'edit-student.Email' | translate }}</label>
         <input type="email" formControlName="email" class="form-control" required>
     </div>
 
     <div class="mb-3">
-     <label for="name">Etudiant course</label>
+     <label for="name">{{ 'edit-student.StudentCourse' | translate }}</label>
      <select class="form-control form-select form-select-lg mb-3"  formControlName="etudiant_course" placeholder="" required>
         <option value="B-Tech" selected> B-Tech </option>
         <option value="Angular">ANGULAR</option>
@@ -20,13 +20,13 @@
     </div>
       
     <div class="mb-3">
-        <label for="">Cours Etudiant</label>
+        <label for="">{{ 'edit-student.Fees' | translate }}</label>
         <input type="number" formControlName="fees" class="form-control" required>
     </div>
 
     <div class="mb-3">
-        <button type="submit" class="btn btn-primary">Modifier</button>
+        <button type="submit" class="btn btn-primary">{{ 'edit-student.create' | translate }}</button>
         &nbsp; &nbsp; &nbsp; &nbsp;
-        <button type="reset" class="btn btn-danger"> Réinitialiser </button>
+        <button type="reset" class="btn btn-danger"> {{ 'edit-student.reset' | translate }} </button>
     </div>
 </form>

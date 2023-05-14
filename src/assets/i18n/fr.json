@@ -1,0 +1,62 @@
+{
+    "app": {
+        "register": "S'inscrire",
+        "login": "Se connecter",
+        "admin": "Admin",
+        "student": "Etudiant",
+        "home": "Accueil",
+        "logout": "Déconnexion",
+        "button": "English"
+    },
+    "register": {
+        "title": "Inscription",
+        "email": "Adresse e-mail",
+        "password": "Mot de passe",
+        "registerButton": "S'inscrire",
+        "haveAccount": "Vous avez déjà un compte ?",
+        "loginLink": "Se connecter"
+    },
+    "login": {
+        "title": "Connexion",
+        "email": "Adresse e-mail",
+        "password": "Mot de passe",
+        "loginButton": "Se connecter",
+        "noAccount": "Vous n'avez pas de compte ?",
+        "registerLink": "S'inscrire",
+        "forgotPasswordLink": "Vous avez oublié votre mot de passe ?"
+    },
+    "home": {
+        "title": "Liste des étudiants",
+        "FirstName": "Prénom",
+        "Email": "Adresse e-mail",
+        "StudentCourse": "Cours Etudiant",
+        "Fees": "Frais"
+    },
+    "list-student": {
+        "title": "Liste des étudiants",
+        "FirstName": "Prénom",
+        "Email": "Adresse e-mail",
+        "StudentCourse": "Cours Etudiant",
+        "Fees": "Frais",
+        "Actions": "Actions",
+        "Edit": "Modifier",
+        "Delete": "Supprimer",
+        "Create": "Ajouter un étudiant"
+    },
+    "create-student":{
+        "FirstName": "Prénom",
+        "Email": "Adresse e-mail",
+        "StudentCourse": "Cours Etudiant",
+        "Fees": "Frais",
+        "create": "Créer",
+        "reset":"Réinitialiser"
+    },
+    "edit-student":{
+        "FirstName": "Prénom",
+        "Email": "Adresse e-mail",
+        "StudentCourse": "Cours Etudiant",
+        "Fees": "Frais",
+        "create": "Créer",
+        "reset":"Réinitialiser"
+    }
+}

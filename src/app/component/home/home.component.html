@@ -2,10 +2,10 @@
     <thead class="table-dark">
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Prénom</th>
-        <th scope="col">Email</th>
-        <th scope="col">Cours Etudiant</th>
-        <th scope="col">Frais</th>
+        <th scope="col">{{ 'list-student.FirstName' | translate }}</th>
+        <th scope="col">{{ 'list-student.Email' | translate }}</th>
+        <th scope="col">{{ 'list-student.StudentCourse' | translate }}</th>
+        <th scope="col">{{ 'list-student.Fees' | translate }}</th>
       </tr>
     </thead>
     <tbody>
@@ -14,7 +14,7 @@
         <td>{{ etudiant.firstname}}</td>
         <td>{{ etudiant.email}}</td>
         <td>{{ etudiant.etudiant_course}}</td>
-        <td>{{ etudiant.fees}}</td>
+        <td>{{ etudiant.fees}}</td> 
       </tr>
     </tbody>
   </table>

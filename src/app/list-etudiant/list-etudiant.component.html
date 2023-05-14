@@ -1,12 +1,15 @@
+<div class=" text-center">
+  <a class="btn btn-success" href="/create" style="text-decoration: none;">{{ 'list-student.Create' | translate }}</a>
+</div><br/><br/>
 <table class="table">
     <thead class="table-dark">
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Prénom</th>
-        <th scope="col">Email</th>
-        <th scope="col">Cours Etudiant</th>
-        <th scope="col">Frais</th>
-        <th scope="col">Actions</th>
+        <th scope="col">{{ 'list-student.FirstName' | translate }}</th>
+        <th scope="col">{{ 'list-student.Email' | translate }}</th>
+        <th scope="col">{{ 'list-student.StudentCourse' | translate }}</th>
+        <th scope="col">{{ 'list-student.Fees' | translate }}</th>
+        <th scope="col">{{ 'list-student.Actions' | translate }}</th>
       </tr>
     </thead>
     <tbody>
@@ -17,8 +20,8 @@
         <td>{{ etudiant.etudiant_course}}</td>
         <td>{{ etudiant.fees}}</td>
         <td>
-            <span (click)="removeEtudiant(etudiant)" class="btn btn-danger">Supprimer</span> &nbsp;
-            <span routerLink="/update-etudiant/{{etudiant.id}}" class="btn btn-primary">Modifier</span>
+            <span (click)="removeEtudiant(etudiant)" class="btn btn-danger">{{ 'list-student.Delete' | translate }}</span> &nbsp;
+            <span routerLink="/update-etudiant/{{etudiant.id}}" class="btn btn-primary">{{ 'list-student.Edit' | translate }}</span>
         </td>
       </tr>
     </tbody>
