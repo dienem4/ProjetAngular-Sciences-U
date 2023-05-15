@@ -14,7 +14,9 @@
     "password": "Password",
     "registerButton": "Register",
     "haveAccount": "Already have an account?",
-    "loginLink": "Login"
+    "loginLink": "Login",
+    "Enter your email address please": "Enter your email address please",
+    "Enter your password please": "Enter your password please"
     },
     "login": {
     "title": "Login",

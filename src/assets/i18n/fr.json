@@ -14,7 +14,9 @@
         "password": "Mot de passe",
         "registerButton": "S'inscrire",
         "haveAccount": "Vous avez déjà un compte ?",
-        "loginLink": "Se connecter"
+        "loginLink": "Se connecter",
+        "Enter your email address please": "Entrez votre adresse email s'il vous plait",
+        "Enter your password please": "Entrez votre mot de passe s'il vous plait"
     },
     "login": {
         "title": "Connexion",

@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
            
         if(this.password == ''){
           alert('Entrez votre mot de passe s\'il vous plait');
-          return;
+          return;  
         }
         
         this.auth.login(this.email, this.password);

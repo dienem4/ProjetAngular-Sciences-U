@@ -1,0 +1,11 @@
+{
+      "login": {
+        "requiredEmail": "Entrez votre adresse email s'il vous plait",
+        "requiredPassword": "Entrez votre mot de passe s'il vous plait"
+        },
+        
+      "register": {
+        "requiredEmail": "Entrez votre adresse email s'il vous plait",
+        "requiredPassword": "Entrez votre mot de passe s'il vous plait"
+        }
+}

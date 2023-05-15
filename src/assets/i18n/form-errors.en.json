@@ -1,0 +1,10 @@
+{
+   "login":{
+    "requiredEmail": "Please enter your email address",
+    "requiredPassword": "Please enter your password"
+   },
+   "register":{
+    "requiredEmail": "Please enter your email address",
+    "requiredPassword": "Please enter your password"
+   }
+}
