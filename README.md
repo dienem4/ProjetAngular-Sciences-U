@@ -1,27 +1,38 @@
-# EtudiantAngularScience
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+### Livrables: 
+ - un readme qui explique comment lancer l'application et les étapes de configuration nécessaires
+   npm install :  pour installer toutes les dépendances.
+   npm install -g @angular/cli : Pour installer angular cli
+   npm: start pour lancer l'application
+   npm install firebase @angular/fire --save pour installer les bibliothèques Firebase nécessaires
+  
+   
 
-## Development server
+   
+ - Decrivez la structure de votre application et vos éventuels choix en terme de choix de librairies tierces, d'organisation du code...
+       J'ai utiliser firebase cloud firestore pour la base de données.
+       Pour la traduction j'ai installer les deux commandes:
+            - @ngx-translate/core : C'est le cœur de la bibliothèque de traduction "@ngx-translate" pour Angular. Il fournit des fonctionnalités pour la gestion des langues, la traduction de texte et la configuration de la bibliothèque.
+            - @ngx-translate/http-loader : Ce package fournit une méthode pour charger les fichiers de traduction à partir d'une source HTTP. Il est couramment utilisé pour récupérer des fichiers de traduction à partir d'un serveur distant.
+    ng generate module mon-nouveau-module : Pour générer un nouveau module
+    ng generate service mon-nouveau-service : Pour générer un nouiveau service
+    ng generate component mon-nouveau-composant : Pour générer un nouveau composant
+    ng generate guard mon-nouveau-garde --implements CanActivate : Pour générer un garde d'authentification
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+ - Décrivez les fonctionnalités de votre application
+    C'est une application qui permet de gérer les cours des étudiants
+    Elle affiche le Prénom , adresse email, Cours Etudiants et les frais de l'étudiant.
+    J'ai crée une espace d'authentification : login, register , lougout
+    Espace administration: pour ajouter modifier et supprimer les données de firebase firestore.
+    J'ai fait un bouton la traduction de la langue si l'utilisateur clique sur French les données seront traduites en Français et si l'utilisateur clique sur English les données seront traduite en Angalis.
+    J'ai mis en place une logique pour détecter automatiquement la langue préférée de l'utilisateur à partir de son navigateur. Si la langue préférée de l'utilisateur ne correspond à aucune langue prise en charge par l'application, j'utilise le français comme langue par défaut.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
