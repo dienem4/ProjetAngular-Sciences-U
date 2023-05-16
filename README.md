@@ -6,6 +6,11 @@
    npm: start pour lancer l'application
    npm install firebase @angular/fire --save pour installer les bibliothèques Firebase nécessaires
 
+  Pour vous connectez:
+          - Email: test@test.com
+          - Mot de passe: Mbayediene4
+  Vous pouvez s'inscrire vous meme aussi
+
  NB: Dans le dossier src/Assest/image/Appliacation: J'ai mis des capture d'écran pour que vous puissiez voir 
      ce que l'application ressemble par une démonstration
    

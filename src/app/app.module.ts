@@ -41,6 +41,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireStorageModule,
+    AngularFirestoreModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
